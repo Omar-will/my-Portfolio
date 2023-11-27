@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez mes réalisations en tant que développeur web, mes projets de conception, et mes compétences en conception front-end. Explorez mon portfolio pour voir mon travail et mes compétences dans le développement web et l'expérience utilisateur (UX).">
+    <!--=============== FAVICON ===============-->
+    <link rel="icon" href="assets/img/Omar.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/Omar.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title> Portfolio </title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <h1>Mon Portfolio</h1>
+        <nav class="nav container">
+            <a href="#" class="nav__logo" aria-label="Omar">Omar</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item ">
+                        <a href="#home" class="nav__link" aria-label="Aller à l'accueil">
+                            <i class='bx bx-home'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="#about" class="nav__link" aria-label="Aller à about">
+                            <i class='bx bx-user'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link" aria-label="Aller au skills">
+                            <i class='bx bx-book'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#project" class="nav__link" aria-label="Aller au projet">
+                            <i class='bx bx-wrench'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link" aria-label="Aller à work">
+                            <i class='bx bx-briefcase-alt-2'></i>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" aria-label="Aller au contact">
+                            <i class='bx bx-message-square-dots'></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--=============== theme change button ===============-->
+            <i class='bx bx-moon change-theme change-theme-button' id="theme-button"></i>
+
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== HOME ===============-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <span class="home__greeting">Bonjour, Je suis</span>
+                            <h2>Omar Bengoudifa</h2>
+                    <h3 class="home__education">Développeur Frontend</h3>
+
+                    <div class="home__button">
+                        <a download="" href="assets/pdf/mon%20cv.pdf" class="button button--ghost">↩
+                            Télecharger CV
+                        </a>
+
+                        <a href="#about" class="button">À propos</a>
+                    </div>
+                </div>
+
+                <div class="home__handle">
+                    <img src="assets/img/perfil-min.webp" alt="image d'un ordinateur" class="home__img" width="200" height="200" loading="lazy">
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/omar-bengoudifa-59a147151/" target="_blank" class="home__social-link" aria-label="mon compte linkedin">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="https://github.com/Omar-will" target="_blank" class="home__social-link" aria-label="Mon compte github">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+
+                <a href="#about" class="home__scroll">
+                    <i class='bx bx-mouse home__scroll-icon'></i>
+                    <span class="home__scroll-name">scroller</span>
+                </a>
+            </div>
+        </section>
+
+        <!--=============== ABOUT ===============-->
+        <section class="about section" id="about">
+            <span class="section__subtitle">Présentation</span>
+            <h2 class="section__title">Qui Suis-Je ?</h2>
+
+            <div class="about__container container grid">
+                <img src="assets/img/about-min.webp" alt="image d'un ordinateur" class="about__img" width="200" height="200" loading="lazy">
+
+                <div class="about__data">
+                    <div class="about__info">
+                        <div class="about__box">
+                            <i class='bx bx-award about__icon'></i>
+                            <h3 class="about__title">Experience</h3>
+                            <span class="about__subtitle">9 mois de formation chez OpenClassRoom</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-briefcase-alt about__icon'></i>
+                            <h3 class="about__title">Complété</h3>
+                            <span class="about__subtitle">8+ Projets fictifs</span>
+                        </div>
+                        <div class="about__box">
+                            <i class='bx bx-support about__icon'></i>
+                            <h3 class="about__title">Support</h3>
+                            <span class="about__subtitle">Disponibilité 24/7</span>
+                        </div>
+                    </div>
+
+                    <p class="about__description">
+                        Passionné depuis toujours par un large éventail de domaines, l'informatique occupe une place centrale dans ma vie. Le développement web est une passion. 
+                        Mon parcours d'apprentissage a déjà englobé des technologies telles que HTML, CSS, JavaScript et React, et j'ai hâte de creuser davantage mes compétences et d'explorer de nouveaux horizons. Je suis toujours avide de connaissances et de découvertes.
+                    </p>
+
+                    <a href="#contact" class="button about__button-contact">Contacter moi</a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== SKILLS ===============-->
+        <section class="skills section" id="skills">
+            <!-- <span class="section__subtitle">My Abilities</span> -->
+            <h2 class="section__title">Mon Expérience</h2>
+
+            <!-- <class="skills__container container grid> -->
+                <div class="skills__content">
+                    <h3 class="skills__title">Frontend Développement</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Avancée</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">CSS/SCSS</h3>
+                                    <span class="skills__level">Avancée</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Javascript</h3>
+                                    <span class="skills__level">Avancée</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Redux</h3>
+                                    <span class="skills__level">intermédiaire</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Avancée</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+                                
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Avancée</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content">
+                    <h3 class="skills__title">Autre notion du développement</h3>
+
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Node JS</h3>
+                                    <span class="skills__level">Intermédiaire</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Mongodb</h3>
+                                    <span class="skills__level">Intermédiaire</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Swagger</h3>
+                                    <span class="skills__level">Avancée</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Postman</h3>
+                                    <span class="skills__level">Intermédiaire</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Github</h3>
+                                    <span class="skills__level">Avancée</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__data">
+                                <i class='bx bxs-badge-check'></i>
+
+                                <div>
+                                    <h3 class="skills__name">Lighthouse</h3>
+                                    <span class="skills__level">Avancée</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!--=============== SERVICES ===============-->
+        <section class="services section" id="project">
+            <span class="section__subtitle">Mes projets réalisés</span>
+            <h2 class="section__title">Conception de site web</h2>
+            
+            <div class="services__container container grid">
+                <div class="services__card">
+                    <div class="serv">
+                        
+                        <h3 class="services__title">Booki</h3>
+                        <img src="assets/img/work2.webp" alt="image du site" class="work__img" loading="lazy">
+                        <a href="https://omar-will.github.io/Booki-P3/" class="work__button" target="_blank">
+                            Demo <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                        <a href="https://github.com/Omar-will/Booki-P3" class="work__button" target="_blank">
+                            Code <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                        <span class="services__button">
+                            Description<i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Créez la page d'accueil d'une agence de voyage avec HTML & CSS</h3>
+
+                            <p class="services__modal-description">
+                                L'objectif de l'entreprise est de créer un site Internet qui permettra aux utilisateurs de rechercher et de réserver des hébergements et des activités dans la ville de leur choix. Ce projet vise à offrir une plateforme conviviale aux usagers, facilitant ainsi la découverte et la planification de voyages et d'expériences dans diverses destinations. 
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        une page index html.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        un dossier pour les assets (images).
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        un dossier “css” contenant un fichier “style.css” 
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <div class="serv">
+                        
+                        <h3 class="services__title">Oh my food</h3>
+                        <img src="assets/img/work1.webp" alt="image du site" class="work__img" loading="lazy">
+                        <a href="https://omar-will.github.io/Ohmyfood/" class="work__button" target="_blank">
+                            Demo <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                        <a href="https://github.com/Omar-will/Ohmyfood" class="work__button" target="_blank">
+                            Code <i class='bx bx-right-arrow work__icon'></i>
+                        </a>
+                        <span class="services__button">
+                            Description<i class='bx bx-right-arrow services__icon'></i>
+                        </span>
+                    </div>
+
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Améliorez l'interface d'un site mobile avec des animations CSS</h3>
+
+                            <p class="services__modal-description">
+                                Objectif: Développer une plateforme en priorisant l'expérience mobile, permettant aux utilisateurs de découvrir et réserver des menus dans des restaurants gastronomiques tout en leur offrant la possibilité de composer leur repas à l'avance.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        une page index html.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        un dossier pour les assets (fichier CSS, images).
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        un dossier pour le SASS.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        un dossier 'restaurants' pour y mettre les pages de restaurants.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Portfolio architecte</h3>
+                    <img src="assets/img/work3.webp" alt="image du site" class="work__img" loading="lazy">
+                    <a href="https://github.com/Omar-will/Portfolio-architecte-sophie-bluel-" class="work__button" target="_blank">
+                        Code <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                    <span class="services__button">
+                        Description<i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Créez une page web dynamique avec JavaScript</h3>
+
+                            <p class="services__modal-description">
+                                Assigné en tant que développeur front-end sur la conception du site portfolio d'une architecte d'intérieur. mon rôle était de collaborer avec l'équipe existante pour créer un site web qui mettai en valeur les créations et les compétences de l'architecte d'intérieur. Ce site portfolio sera conçu pour présenter de manière élégante et visuellement attrayante les projets de design d'intérieur de l'architecte. 
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Gérer les appels à l’API et récupérées les données via Swagger
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        2 pages index html.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        2 fichier Javascript
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        un dossier pour les assets (fichier CSS, images).
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Installation de Node.js.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Kasa</h3>
+                    <img src="assets/img/work4.webp" alt="image du site" class="work__img" loading="lazy">
+
+                    <a href="https://github.com/Omar-will/Kasa" class="work__button" target="_blank">
+                        Code <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                    <span class="services__button">
+                        Description<i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Créez une application web de location immobilière avec React</h3>
+
+                            <p class="services__modal-description">
+                                Kasa, un acteur majeur dans le secteur de la location d'appartements entre particuliers en France, possède une expérience de près de 10 ans dans ce domaine. Avec une impressionnante moyenne de plus de 500 nouvelles annonces mises en ligne quotidiennement
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Application React.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        React Router.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Create React App (CRA).
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Un dossier pour le SASS.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="services__card">
+                    <h3 class="services__title">Nina Carducci</h3>
+                    <img src="assets/img/work7.webp" alt="image du site" class="work__img" loading="lazy">
+
+                    <a href="https://github.com/Omar-will/Ninacarducci" class="work__button" target="_blank">
+                        Code <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                    <span class="services__button">
+                        Description<i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Optimisez le référencement d'un site de photographe</h3>
+
+                            <p class="services__modal-description">
+                                le site de Nina Carducci, une photographe professionnelle. Mon objectif était d'améliorer la performance de son site en mettant en œuvre les actions, Optimisation des images, Optimisation du code et de la structure.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Faire une optimisation globale du site tant sur les performances que sur le SEO.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Mettre en place le référencement local en utilisant Schema.org.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Ajouter les metas pour les réseaux sociaux.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Faire les modifications liées à l’accessibilité du site.
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Produire un rapport d’optimisation présentant toutes vos actions et leur impact.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">724 Events</h3>
+                    <img src="assets/img/work6.webp" alt="image du site" class="work__img" loading="lazy">
+
+                    <a href="https://github.com/Omar-will/724-Events" class="work__button" target="_blank">
+                        Code <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                    <span class="services__button">
+                        Description<i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Débuggez le site d'une agence d'événementiel</h3>
+
+                            <p class="services__modal-description">
+                                L'agence 724events prévoit de lancer la nouvelle version de son site vitrine événementiel, qui est conçu comme une page unique (one-page). Ma mission consistai à résoudre les problèmes et les bugs restants sur le site afin de le rendre pleinement opérationnel.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        installation Node.js
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Installation et configuration de React Dev Tools
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        React.js
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Tests unitaires
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Tenir à jour un cahier de recette 
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services__card">
+                    <h3 class="services__title">Argent Bank</h3>
+                    <img src="assets/img/work5.webp" alt="image du site" class="work__img" loading="lazy">
+
+                    <a href="https://github.com/Omar-will/Argentbank-" class="work__button" target="_blank">
+                        Code <i class='bx bx-right-arrow work__icon'></i>
+                    </a>
+                    <span class="services__button">
+                        Description<i class='bx bx-right-arrow services__icon'></i>
+                    </span>
+
+                    <div class="services__modal">
+                        <div class="services__modal-content">
+                            <i class='bx bx-x services__modal-close'></i>
+
+                            <h3 class="services__modal-title">Implémentez le front-end d'une application bancaire avec React</h3>
+
+                            <p class="services__modal-description">
+                                Argent Bank, une nouvelle banque en ligne, Utiliser Redux pour gérer le state de l'ensemble de l'application.
+                                Ce que doit faire l’application :
+                                L'utilisateur peut visiter la page d'accueil.
+                                L'utilisateur peut se connecter au système et se déconnecter.
+                                L'utilisateur peut voir les informations de son propre profil qu'après s'être connecté.
+                                L’utilisateur peut modifier son pseudo.
+                            </p>
+
+                            <ul class="services__modal-list">
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        installation Node.js
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Installation de Mongodb
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        React.js
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Create React App (CRA).
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Redux 
+                                    </p>
+                                </li>
+
+                                <li class="services__modal-item">
+                                    <i class='bx bx-check-circle'></i>
+                                    <p class="services__modal-info">
+                                        Fichier Sass.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== WORK ===============-->
+        <section class="work section" id="work">
+            
+            <span class="section__subtitle">Mes services</span>
+            <h2 class="section__title">Ce que je propose</h2>
+
+            <div class="work__container container grid">
+                    <div class="work__card mix web">
+                        <h3 class="work__title">Mon offre</h3>
+                        <p class="services__modal-info">
+                            J'excelle dans la conception et le développement de sites web en alliant un sens aigu de la créativité à une approche pragmatique. Mon objectif est de créer des expériences en ligne qui transcendent les attentes, tout en étant solidement ancrées dans les besoins spécifiques de mes clients. Mon engagement à rester à l'affût des dernières tendances et évolutions du marché me permet de proposer des solutions à la fois novatrices et en phase avec le contexte actuel.
+                        </p>
+                    </div>
+                    <div class="work__card mix web">
+                        <h3 class="work__title">Expériences Web </h3>
+                        <ul class="services__modal-list">
+                            <li class="services__modal-item">
+                                <i class='bx bx-check-circle'></i>
+                                <p class="services__modal-info">
+                                    Je développe des interfaces utilisateurs.
+                                </p>
+                            </li>
+                            <li class="services__modal-item">
+                                <i class='bx bx-check-circle'></i>
+                                <p class="services__modal-info">
+                                    Développement de pages Web.
+                                </p>
+                            </li>
+                            <li class="services__modal-item">
+                                <i class='bx bx-check-circle'></i>
+                                <p class="services__modal-info">
+                                    Je crée les interactions des éléments UX.
+                                </p>
+                            </li>
+                            <li class="services__modal-item">
+                                <i class='bx bx-check-circle'></i>
+                                <p class="services__modal-info">
+                                    Je positionne le nom de votre entreprise.
+                                </p>
+                            </li>
+                            <li class="services__modal-item">
+                                <i class='bx bx-check-circle'></i>
+                                <p class="services__modal-info">
+                                    Utilisation avancée de Redux pour gérer l'état de l'application.
+                                </p>
+                            </li>
+                            <li class="services__modal-item">
+                                <i class='bx bx-check-circle'></i>
+                                <p class="services__modal-info">
+                                    Capable de créer des tests unitaires pour garantir la qualité du code et des fonctionnalités.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="work__card mix web">
+                        <h3 class="work__title">Études</h3>
+                        <div class="collapse-content">
+                            <p class="services__modal-info">
+                                Pendant ma formation chez OpenClassroom, j'ai acquis une expertise complète dans le domaine du développement web, en me concentrant sur les technologies HTML, CSS, React.js, et Redux pour créer des sites web de haute qualité. J'ai également acquis des compétences essentielles en optimisation de sites web, tests unitaires, débogage, gestion des routes à l'aide de Swagger, et bien d'autres aspects qui me permettent de créer des solutions web efficaces et robustes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section" id="contact">
+            <span class="section__subtitle">Get in touch</span>
+            <h3 class="section__title">Contacter Moi</h3>
+
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-info">Joignabilité</h3>
+
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+                                <path fill="#a395e9" d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"/>
+                                <path fill="#a395e9" d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"/>
+                            </svg>
+                            <h3 class="contact__card-title">Email</h3>
+
+                            <a href="mailto:omar.bengoudifa@outlook.fr" target="_blank" class="contact__button">
+                                écrivez moi <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512">
+                                <style>svg{fill:#a395e9}</style>
+                                <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+                            </svg>
+                            <h3 class="contact__card-title">Whatsapp</h3>
+                            <span class="contact__card-data">0602040932</span>
+
+                            <a href="https://api.whatsapp.com/send?phone=+33602040932&text=Hey%20there!" target="_blank" class="contact__button">
+                                écrivez moi <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512">
+                                <style>svg{fill:#ffffff}</style>
+                                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                            <h3 class="contact__card-title">Twitter</h3>
+                            <span class="contact__card-data">OmarBengoudifa</span>
+
+                            <a href="https://twitter.com/OmarBengoudifa" target="_blank" class="contact__button">
+                                écrivez moi <i class='bx bx-right-arrow contact__button-icon'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact__content">
+                    <h3 class="contact__title contact__title-form">Poser votre question</h3>
+
+                    
+                    <div class="contact__form-div">
+                        <label for="sendername" class="contact__form-tag">Nom</label>
+                        <input type="text" id="sendername" name="sendername" placeholder="Entrez votre nom" class="contact__form-input" autocomplete="name">
+                    </div>
+                    <div class="contact__form-div">
+                        <label for="to" class="contact__form-tag">Email</label>
+                        <input type="text" id="to" name="to" placeholder="Entrez votre email" class="contact__form-input" autocomplete="email">
+                    </div>
+                    <div class="contact__form-div">
+                        <label for="subject" class="contact__form-tag">Titre</label>
+                        <input type="text" id="subject" name="subject" placeholder="Ajouter un titre" class="contact__form-input" autocomplete="email">
+                    </div>
+                    <div class="contact__form-div contact__form-area">
+                        <label for="message" class="contact__form-tag">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="écrire votre message" class="contact__form-input"></textarea>
+                    </div>                    
+
+                    <button class="button" onclick="sendMail()">Envoyer votre message</button>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <!-- <h1 class="footer__title">Omar</h1> -->
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a href="#" class="footer__link">Home</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#skills" class="footer__link">Skills</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#project" class="footer__link">Project</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#work" class="footer__link">Work</a>
+                </li>
+                <li class="footer__item">
+                    <a href="#contact" class="footer__link">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="https://www.facebook.com/Mr.momar.bg" target="_blank" class="footer__social-link" aria-label="mon facebook">
+                        <i class='bx bxl-facebook footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://twitter.com/OmarBengoudifa" target="_blank" class="footer__social-link" aria-label="mon twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512">
+                            <style>svg{fill:#a395e9}</style>
+                            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://www.linkedin.com/in/omar-bengoudifa-59a147151/" target="_blank" class="footer__social-link" aria-label="mon linkedin">
+                        <i class='bx bxl-linkedin footer__social-icon'></i>
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://www.instagram.com/omar.bengoudifa/" target="_blank" class="footer__social-link" aria-label="mon instagram">
+                        <i class='bx bxl-instagram footer__social-icon'></i>
+                    </a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; 2023. All rights reserved.
+            </span>
+        </div>
+    </footer>
+
+    <!--=============== SCROLLREVEAL ===============-->
+
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js" defer></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js" defer></script>
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js" defer></script>
+
+    <!--=============== email.min.js ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js" defer></script>
+</body>
+
+</html>
