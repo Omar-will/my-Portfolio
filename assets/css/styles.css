@@ -738,7 +738,8 @@ h1 {
   }
   @media screen and (max-width: 435px) {
     .work__card {  
-  margin: auto;
+      margin: auto;
+      width: 17rem;
     }
   }
 }
