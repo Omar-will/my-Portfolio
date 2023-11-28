@@ -491,7 +491,9 @@ h1 {
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: 1.25rem;
-  margin: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
   
 }
 
@@ -739,7 +741,7 @@ h1 {
   @media screen and (max-width: 435px) {
     .work__card {  
       margin: auto;
-      width: 17rem;
+      width: 15rem;
     }
   }
 }
@@ -1000,7 +1002,6 @@ h1 {
 }
 
 .services__card {
-
   min-width: 13rem;
   margin-left: -1.8rem;
 }
@@ -1254,5 +1255,32 @@ h1 {
     padding: 0.4rem;
     border-radius: 0.5rem;
   }
+  
+}
+
+@media screen and (max-width: 930px) {
+ 
+  .skills__content {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+  }
+  
+}
+
+@media screen and (max-width: 460px) {
+ 
+  .skills__content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+  }
+  
+}
+
+@media screen and (max-width: 430px) {
+  .work__img {
+    width: 340px;
+  } 
   
 }
