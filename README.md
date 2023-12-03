@@ -36,7 +36,7 @@ Le pied de page offre une navigation facilitée, des liens vers les réseaux soc
 
 ## Section "Scripts"
 
-La section "Scripts" détaille l'utilisation de bibliothèques telles que ScrollReveal, Swiper JS, MixItUp, et EmailJS, contribuant à l'interactivité et à la modernité du site.
+La section "Scripts" détaille l'utilisation de bibliothèques telles que ScrollReveal et EmailJS, contribuant à l'interactivité et à la modernité du site.
 
 N'hésitez pas à explorer chaque section pour en savoir plus sur mes compétences, mon expérience, et mes réalisations. Merci de visiter mon portfolio web !
 

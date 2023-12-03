@@ -234,6 +234,8 @@ body.light-theme {
 h1 {
   margin-left: 1rem;
   margin-top: 1rem;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
 }
 
 .nav {
@@ -297,6 +299,11 @@ h1 {
 /* Change background header */
 .scroll-header {
   box-shadow: 0 4px 4px hsla(0, 0%, 4%, 0.3);
+}
+
+.bx.bx-moon.change-theme.change-theme-button {
+  cursor: pointer;
+  font-size: var(--h3-font-size);
 }
 
 /*=============== HOME ===============*/
