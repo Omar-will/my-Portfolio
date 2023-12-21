@@ -61,15 +61,19 @@ function scrollHeader() {
   const lightTheme = "light-theme";
   const iconTheme = "bx-sun";
   
-  const selectedTheme = localStorage.getItem("selected-theme");
-  const selectedIcon = localStorage.getItem("selected-icon");
+  const selectedTheme = localStorage.getItem("selected-theme") || "light";
+  const selectedIcon = localStorage.getItem("selected-icon") || "bx bx-sun";
   
   const getCurrentTheme = () =>
     document.body.classList.contains(lightTheme) ? "dark" : "light";
   const getCurrentIcon = () =>
     themeButton.classList.contains(iconTheme) ? "bx bx-moon" : "bx bx-sun";
   
-  if (selectedTheme) {
+    if (selectedTheme === "light") {
+      
+      document.body.classList.add(lightTheme);
+      themeButton.classList.add(iconTheme);
+    }
     
     document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
       lightTheme
@@ -77,7 +81,7 @@ function scrollHeader() {
     themeButton.classList[selectedIcon === "bx bx-moon" ? "add" : "remove"](
       iconTheme
     );
-  }
+  
   
   themeButton.addEventListener("click", () => {
 
