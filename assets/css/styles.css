@@ -170,7 +170,7 @@ body.light-theme {
 }
 
 .light-theme .button,
-.light-theme .skills__content,
+.light-theme .skill-card,
 .light-theme .services__card,
 .light-theme .work__card,
 .light-theme .testimonial__card,
@@ -435,6 +435,106 @@ h1 {
   font-size: var(--smaller-font-size);
   transform: rotate(-90deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+.skills{
+  position: relative;
+  margin: 100px 0;
+}
+
+.skills-container{
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.skill-card{
+  width: 150px;
+  height: 200px;
+  background: #151c28;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.light-theme .skill-card {
+  background: #E9E9E9;
+}
+
+
+
+.skill-image{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  transition: .5s;
+}
+
+.skill-name{
+  position: absolute;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  width: 100%;
+  transition: 0.5s;
+  border-top: 5px solid hsl(219, 48%, 8%);
+}
+
+.skill-card::after, .skill-card::before{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: hsl(219, 48%, 8%);
+  z-index: 2;
+  transform: rotate(45deg);
+}
+
+.skill-card::before{
+  bottom: -20px;
+  left: -20px;
+}
+
+.skill-card::after{
+  bottom: -20px;
+  right: -20px;
+}
+
+.skill-card:hover{
+  background-color: hsl(219, 48%, 8%)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*=============== BUTTONS ===============*/
 .button {
